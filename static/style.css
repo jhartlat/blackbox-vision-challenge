@@ -1,0 +1,23 @@
+/* Presentation only: CSS never decides whether an answer is correct. */
+:root { color-scheme: light; font-family: system-ui, -apple-system, sans-serif; color: #172b4d; background: #edf2f7; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; display: grid; place-items: center; padding: 24px 16px; }
+main { width: min(100%, 520px); }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; font-weight: 700; font-size: .9rem; }
+.mark { display: grid; place-items: center; background: #172b4d; color: white; width: 48px; height: 48px; border-radius: 14px; letter-spacing: -.06em; }
+section { background: white; border: 1px solid #d8e1ec; border-radius: 24px; padding: clamp(20px, 5vw, 32px); box-shadow: 0 16px 48px #172b4d0a; }
+#progress { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; font-size: .85rem; color: #485b75; }
+h1 { font-size: clamp(1.5rem, 6vw, 2rem); line-height: 1.25; margin: 28px 0; overflow-wrap: anywhere; }
+#choices { display: grid; gap: 12px; }
+button { font: inherit; color: #172b4d; background: #f5f7fa; border: 1px solid #b7c5d7; border-radius: 12px; padding: 16px; min-height: 56px; width: 100%; text-align: left; cursor: pointer; overflow-wrap: anywhere; }
+button:hover:not(:disabled) { border-color: #245ac6; background: #edf3ff; }
+button:focus-visible, h1:focus-visible { outline: 3px solid #245ac6; outline-offset: 4px; }
+button:disabled { cursor: default; opacity: .7; }
+button.selected { border: 2px solid #245ac6; background: #edf3ff; opacity: 1; }
+#feedback { min-height: 1.5em; margin: 20px 0 0; font-weight: 700; }
+#feedback.correct { color: #126340; }
+#feedback.incorrect { color: #9c2b2b; }
+.final-score { font-size: 2.5rem; font-weight: 750; margin: 0 0 12px; }
+.percentage { font-size: 1.4rem; color: #485b75; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: no-preference) { button { transition: background-color .15s; } }

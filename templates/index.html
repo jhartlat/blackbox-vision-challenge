@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172b4d">
+  <title>Blackbox Vision Challenge</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <main>
+    <header><span class="mark" aria-hidden="true">B / V</span><p>Blackbox Vision Challenge</p></header>
+    <section id="quiz" aria-labelledby="question">
+      <div id="progress"><span id="number">Python, one question at a time</span><span id="score"></span></div>
+      <h1 id="question" tabindex="-1">Loading your challenge…</h1>
+      <div id="choices" aria-label="Answer choices"></div>
+      <p id="feedback" role="status" aria-live="polite"></p>
+      <button id="retry" hidden>Reload quiz</button>
+    </section>
+    <noscript>This quiz needs JavaScript to send answers and show the next question. Enable JavaScript and reload.</noscript>
+  </main>
+</body>
+</html>

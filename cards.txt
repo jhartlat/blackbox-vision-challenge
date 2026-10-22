@@ -1,0 +1,22 @@
+# Blackbox Vision Challenge: 20 introductory Python concepts.
+# Format: question|unique answer. The | character is reserved.
+What does print() do?|Displays output
+What does len() return?|The number of items
+What does input() return?|Text entered by the user
+What does int() convert a suitable value into?|A whole number
+What does str() convert a value into?|A string
+What does float() convert a suitable value into?|A floating-point number
+What does a Python list hold?|An ordered mutable collection
+What does a Python tuple hold?|An ordered immutable collection
+What does a Python dictionary hold?|Key-value pairs
+What does a Python set hold?|Unique elements
+What does an if statement do?|Runs code when a condition is true
+What does a for loop do?|Iterates over items
+What does a while loop do?|Repeats while a condition is true
+What does def introduce?|A function definition
+What does return do inside a function?|Sends a value back to the caller
+What does the == operator test?|Whether two values are equal
+What does the = operator do?|Assigns a value to a name
+What does split() do to a string?|Separates text into a list of parts
+What does strip() remove by default?|Leading and trailing whitespace
+What does append() do to a list?|Adds one item to the end
